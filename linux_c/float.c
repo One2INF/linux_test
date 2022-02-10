@@ -19,5 +19,10 @@ int main(void)
   /* nan = not a number */
   printf("asin(1.1): %lf\r\n", asin(1.1L));
 
+  float a, b;
+  b = 2.0e20 + 1.0;
+  a = b - 2.0e20;
+  printf("2.0e20 + 1.0 - 2.0e20: %f\r\n", a);
+
   return 0;
 }
