@@ -1,5 +1,11 @@
 #include<stdio.h>
 
+/*
+ * sizeof is C's inner operator, not function.
+ * use %zd format to print size_t.(C99/C11)
+ * if not use %u or %lu instead.
+ */
+
 int main(void)
 {
   printf("int\t\tsize: %lu\r\n", sizeof(int));
