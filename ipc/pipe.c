@@ -7,7 +7,8 @@
 #include<string.h>
 
 /*
- * 无名管道：亲缘进程间通信。
+ * 无名管道：亲缘进程间通信，
+ * 一次性阅后即焚的通信方式。
  */
 
 int main(void)
@@ -35,6 +36,7 @@ int main(void)
     int iReadNum = read(filedes[0], buff, BUFFER_SIZE);
     printf("child process read %d B from pipe: %s", iReadNum, buff);
     close(filedes[0]);
+
     exit(EXIT_SUCCESS);
   }
   else
