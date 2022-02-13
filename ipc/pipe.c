@@ -6,6 +6,10 @@
 #include<errno.h>
 #include<string.h>
 
+/*
+ * 无名管道：亲缘进程间通信。
+ */
+
 int main(void)
 {
   /*
