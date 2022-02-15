@@ -5,10 +5,10 @@
 #include<stdio.h>
 
 /*
- * 有名管道：通用进程间通信，
- * 也是阅后即焚的通信方式，因为在内核空间。
- * 必须两端同时打开，否则打开会阻塞。
- * 这是为了保证效率，内存及时释放，
+ * 信号：
+ * signal(SIGUSR1, SIGIGN): 忽略信号；
+ * signal(SIGUSR1, SIGDEL): 默认方式处理；
+ * signal(SIGUSR1, SIGDFL): 自定义方法处理。
  */
 
 void MySignalHandle(int signum)
