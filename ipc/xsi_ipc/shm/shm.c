@@ -18,7 +18,7 @@ void Usr1SignalHandle(int signum)
 
 int main()
 {
-  int shmid = shmget(IPC_PRIVATE, SHM_SIZE, O_CREAT | 0664);
+  int shmid = shmget(IPC_PRIVATE, SHM_SIZE, IPC_CREAT | 0664);
   if(shmid == -1)
   {
     printf("shmget() failed: %s\r\n", strerror(errno));
