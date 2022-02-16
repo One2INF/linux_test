@@ -16,7 +16,7 @@ typedef struct
   char text[BUFF_SIZE];
 }MSG_DATA_ST;
 
-int main()
+int main(void)
 {
   int msgid = msgget(IPC_PRIVATE, IPC_CREAT | 0664);
   if(msgid == -1)

@@ -16,7 +16,7 @@ void Usr1SignalHandle(int signum)
   return;
 }
 
-int main()
+int main(void)
 {
   int shmid = shmget(IPC_PRIVATE, SHM_SIZE, IPC_CREAT | 0664);
   if(shmid == -1)

@@ -17,7 +17,7 @@ typedef struct
   char text[BUFF_SIZE];
 }MSG_DATA_ST;
 
-int main()
+int main(void)
 {
   key_t key = ftok("/proc/cpuinfo", 'a');
   if(key == -1)

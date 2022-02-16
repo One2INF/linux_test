@@ -22,7 +22,7 @@ void Usr1SignalHandle(int signum)
   return;
 }
 
-int main()
+int main(void)
 {
   key_t key = ftok("/proc/cpuinfo", 'a');
   if(key == -1)
