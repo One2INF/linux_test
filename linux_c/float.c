@@ -14,7 +14,7 @@ int main(void)
 
   /* float underflow */
   float toosmall = 3.4e-44 / 100.0f;
-  printf("toosmall: %f\r\n", toosmall);
+  printf("toosmall: %e\r\n", toosmall);
 
   /* nan = not a number */
   printf("asin(1.1): %lf\r\n", asin(1.1L));
