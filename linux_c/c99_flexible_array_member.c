@@ -22,6 +22,7 @@ void showFlex(const struct flex *p)
 int main(void)
 {
   char str1[LEN] = "I am szj!";
+  /* sizeof(struct flex) 不包含伸缩型数组的空w */
   struct flex *pf1 = malloc(sizeof(struct flex) + strlen(str1));
 
   strncpy(pf1->header, "Header1", LEN);
