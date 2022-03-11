@@ -2,17 +2,17 @@
 
 int add(int a, int b)
 {
-  int and, xor;
+  int carry, sum;
 
   do{
-    xor = a ^ b;
-    and = (a & b) << 1;
-    a = xor;
-    b = and;
+    sum = a ^ b;
+    carry = (a & b) << 1;
+    a = sum;
+    b = carry;
   }
-  while(and);
+  while(carry);
 
-  return xor;
+  return sum;
 }
 
 int main(void)
